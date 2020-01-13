@@ -1,0 +1,45 @@
+# sous categories d'inm  
+
+create table scateg (
+id integer not null , 
+name text, 
+kcat integer,
+num integer, --parametre pour affichage numero sous categorie
+primary key  (id), foreign key (kcat) references categ(id)
+);
+
+# categorie 1 Psychological health interventions
+
+        (1,"Art therapy",1,1),
+        (2,"Health Education",1,2),
+        (3,"psychotherapy",1,3),
+        (4,"zootherapy",1,4)
+
+# categorie 2 physicla health interventions
+
+        (5,"physical activity",2,1),
+        (6,"Hortitherapy",2,2),
+        (7,"Physiotherapy",2,3),
+        (8,"Manual therapy",2,4),
+        (9,"Thermalism",2,5)
+
+# categorie 3 Nutritional health interventions
+
+
+        (10,"Dietary supplements",3,1),
+        (11,"Nutritional therapy",3,2)
+
+# categorie 4 Digital health interventions 
+
+        (12,"eHealth Devices",4,1),
+        (13,"Therapeutic games",4,2),
+        (14,"Virtual Realty therapy",4,3)
+
+
+# categorie 5 Other health interventions 
+          
+         (15,"ergonomic tools",5,1),
+         (16,"Phytotherapy",5,2),
+         (17,"Cosmetic therapy",5,3),
+         (18,"Wave therapy",5,4),
+         (19,"Lithotherapy",5,5)

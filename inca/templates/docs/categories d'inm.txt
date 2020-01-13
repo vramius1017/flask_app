@@ -1,0 +1,7 @@
+# categories d'inm 
+
+        (1,"Psychological Health Interventions","NPI1."),
+        (2,"Physical Health Interventions","NPI2."),
+        (3,"Nutritional Health Interventions","NPI3."),
+        (4,"Digital Health Interventions","NPI4."),
+        (5,"Other Health Interventions","NPI5.")

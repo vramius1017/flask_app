@@ -1,0 +1,71 @@
+<html>
+{% block header %}
+
+
+<head>
+<meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title>{% block title%}{% endblock %}</title>
+</head>
+
+<body>
+
+  <div class="alert alert-success" role="alert">
+    <div class=navbar>
+    <h1 align="left"><img src="/static/img/UPV/jpeg/logocnvf.jpg" width="100" height="100" ></h1>
+    <h1 align="center"><img src="/static/img/plateformeceps.png">
+    <h1 align="right"><img src="/static/img/inca.png" width="100" height="100"></h1>
+  </div>
+</div>
+{% endblock  %}
+                              <!-- titre de la page  -->
+
+                              <h1>{% block present_title  %} {% endblock  %}</h1>
+
+
+                               <!---texte présentation -->
+                                  {% block  presentation%}
+                              <div class="text_center">
+                                   <p>{% block present_texte  %} {% endblock  %}</p>
+                              </div>
+                                  {% endblock  %}
+                   <!--liens vers  applications de la  PlateformeCEPS -->
+                   {% block links %}
+                   
+<div>
+
+  <!--liens vers  applications de la  PlateformeCEPS -->
+    <p align="center"><a href="#"><button type="button" class="btn btn-outline-primary"></button></a></p>
+	
+<!--- texte  présentation des fonctionnalités  -->
+
+      <p class="text-uppercase" align="center"></p>
+
+ <!--- texte fonctionnalités de l'application  --> 
+     <p align="center"><a href="/selection/"><button type="button" class="btn btn-outline-success">Selection -- recherche études  sur les INM </button></a></p>
+     <p align="center"><a href="/proposition/"><button type="button" class="btn btn-outline-success">Proposition -- proposition d'une INM  à partir d'une étude</button></a></p> 
+     <p align="center"><a href="/validation"><button type="button" class="btn btn-outline-success">Validation -- validateur d'études  sur les INM </button></a></p>
+     <p align="center"><a href="/test/">Autres Fonctions  -- en cours de travaux </a></p>
+   
+</div>
+                     {% endblock links %}
+<!--- fin texte -->
+{% block footer %}
+
+<!---  footer de l'application -->
+<div class="alert alert-success" role="alert">
+<footer class="page-footer font-small green"></footer>
+<div class="footer-copyright text-center py-3">@ 2019 Copyright : PlateformeCEPS 
+  <p align="center">Université Paul Valery Montpellier --  PlateformeCEPS</p>
+</div> 
+</div>
+<!--- commandes js BT4 -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--- fin du footer-->
+</body>
+ {% endblock footer %}}}                                        
+</html>
