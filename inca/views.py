@@ -6,8 +6,9 @@ app.config.from_object('config')
 
 
 @app.route("/")
-def hello_world():
-    return render_template('index.html')
+def index():
+    links=["www.inmcancer.fr","www.niri.fr","www.nishare.fr"]    
+    return render_template('index.html', links=links)
 
 @app.route("/selection/")
 def selection():
@@ -18,5 +19,10 @@ def proposition():
     return render_template('proposition.html')
 
 @app.route("/validation/")
-def valdate():
+def validate():
     return render_template('validate.html')
+
+
+@app.route("/divers/")
+def   divers():
+    return  render_template('divers.html')  
