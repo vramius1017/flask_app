@@ -12,6 +12,8 @@ selenium = "*"
 pandas = "*"
 scipy = "*"
 scikit-learn = "*"
+flask-cqlalchemy = "*"
+jupyter = "*"
 
 [requires]
 python_version = "3.8"

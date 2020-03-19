@@ -1,0 +1,113 @@
+id;catcode;catname;scatcode;scatname;charac;code
+389;1;Psychological health intervention;1;Art therapy ;Accompanying activities;NPI1.1.1
+5982;1;Psychological health intervention;1;Art therapy ;Animated picture;NPI1.1.1
+1197;1;Psychological health intervention;1;Art therapy ;Artistic workshop;NPI1.1.1
+4105;1;Psychological health intervention;1;Art therapy ;Body language;NPI1.1.1
+2465;1;Psychological health intervention;1;Art therapy ;Cinapse;NPI1.1.1
+1198;1;Psychological health intervention;1;Art therapy ;Citizen Workshop;NPI1.1.1
+910;1;Psychological health intervention;1;Art therapy ;Clay;NPI1.1.1
+2541;1;Psychological health intervention;1;Art therapy ;clown;NPI1.1.1
+2584;1;Psychological health intervention;1;Art therapy ;collage;NPI1.1.1
+1199;1;Psychological health intervention;1;Art therapy ;Community Workshop;NPI1.1.1
+1204;1;Psychological health intervention;1;Art therapy ;Creative Workshop;NPI1.1.1
+3404;1;Psychological health intervention;1;Art therapy ;discussions;NPI1.1.1
+3269;1;Psychological health intervention;1;Art therapy ;Drawing;NPI1.1.1
+8430;1;Psychological health intervention;1;Art therapy ;Heritage;NPI1.1.1
+1200;1;Psychological health intervention;1;Art therapy ;Humanitarian Workshop;NPI1.1.1
+1203;1;Psychological health intervention;1;Art therapy ;Initiation Workshop;NPI1.1.1
+6052;1;Psychological health intervention;1;Art therapy ;Installation;NPI1.1.1
+1201;1;Psychological health intervention;1;Art therapy ;Intercultural Workshop;NPI1.1.1
+6088;1;Psychological health intervention;1;Art therapy ;Invitations to a cultural outing;NPI1.1.1
+6673;1;Psychological health intervention;1;Art therapy ;Literature;NPI1.1.1
+7030;1;Psychological health intervention;1;Art therapy ;Mask;NPI1.1.1
+7320;1;Psychological health intervention;1;Art therapy ;Mime;NPI1.1.1
+7390;1;Psychological health intervention;1;Art therapy ;Modeling;NPI1.1.1
+8425;1;Psychological health intervention;1;Art therapy ;Modeling clay;NPI1.1.1
+7434;1;Psychological health intervention;1;Art therapy ;Movement;NPI1.1.1
+7535;1;Psychological health intervention;1;Art therapy ;Music;NPI1.1.1
+7384;1;Psychological health intervention;1;Art therapy ;Musical mnemotherapy;NPI1.1.1
+8453;1;Psychological health intervention;1;Art therapy ;Painting;NPI1.1.1
+8540;1;Psychological health intervention;1;Art therapy ;Photo;NPI1.1.1
+8542;1;Psychological health intervention;1;Art therapy ;Photography;NPI1.1.1
+8543;1;Psychological health intervention;1;Art therapy ;Photolangage;NPI1.1.1
+9125;1;Psychological health intervention;1;Art therapy ;Promotion of the cultural offer;NPI1.1.1
+7014;1;Psychological health intervention;1;Art therapy ;puppets;NPI1.1.1
+9976;1;Psychological health intervention;1;Art therapy ;Sculpture;NPI1.1.1
+1202;1;Psychological health intervention;1;Art therapy ;Social Workshop;NPI1.1.1
+2879;1;Psychological health intervention;1;Art therapy ;Tale;NPI1.1.1
+1162;1;Psychological health intervention;1;Art therapy ;Visual and Media Arts;NPI1.1.1
+3622;1;Psychological health intervention;1;Art therapy ;Writing;NPI1.1.1
+3623;1;Psychological health intervention;1;Art therapy ;Writing;NPI1.1.1
+200;1;Psychological health intervention;3;Psychotherapy ;Abreaction;NPI1.3.1
+9225;1;Psychological health intervention;3;Psychotherapy ;Analytical psychodrama group;NPI1.3.1
+9228;1;Psychological health intervention;3;Psychotherapy ;Analytical psychology;NPI1.3.1
+1163;1;Psychological health intervention;3;Psychotherapy ;Art therapy;NPI1.3.1
+721;1;Psychological health intervention;3;Psychotherapy ;Bioenergetic analysis;NPI1.3.1
+1565;1;Psychological health intervention;3;Psychotherapy ;biofeedback;NPI1.3.1
+9233;1;Psychological health intervention;3;Psychotherapy ;Body Psychotherapy;NPI1.3.1
+7269;1;Psychological health intervention;3;Psychotherapy ;Breastplate Release Method (MLC);NPI1.3.1
+7266;1;Psychological health intervention;3;Psychotherapy ;Cathartic method;NPI1.3.1
+9232;1;Psychological health intervention;3;Psychotherapy ;CognitiveBehavioral psychotherapy;NPI1.3.1
+7267;1;Psychological health intervention;3;Psychotherapy ;Coue method;NPI1.3.1
+9660;1;Psychological health intervention;3;Psychotherapy ;Counseling;NPI1.3.1
+3174;1;Psychological health intervention;3;Psychotherapy ;Daseins analysis;NPI1.3.1
+9728;1;Psychological health intervention;3;Psychotherapy ;Daydream;NPI1.3.1
+9729;1;Psychological health intervention;3;Psychotherapy ;Daydream;NPI1.3.1
+3505;1;Psychological health intervention;3;Psychotherapy ;dramatherapy;NPI1.3.1
+9229;1;Psychological health intervention;3;Psychotherapy ;Dynamic psychology;NPI1.3.1
+2632;1;Psychological health intervention;3;Psychotherapy ;Easy communication;NPI1.3.1
+3801;1;Psychological health intervention;3;Psychotherapy ;Emdr (eye movement desensitization and reprocessing);NPI1.3.1
+3804;1;Psychological health intervention;3;Psychotherapy ;Emet analysis;NPI1.3.1
+3809;1;Psychological health intervention;3;Psychotherapy ;Emotional Freedom Technique (Emotional Freedom Technique);NPI1.3.1
+5926;1;Psychological health intervention;3;Psychotherapy ;Ericksonian Hypnosis;NPI1.3.1
+5927;1;Psychological health intervention;3;Psychotherapy ;European hypnosis;NPI1.3.1
+9236;1;Psychological health intervention;3;Psychotherapy ;Existential psychotherapy;NPI1.3.1
+4165;1;Psychological health intervention;3;Psychotherapy ;Eye movement desensitization and reprocessing;NPI1.3.1
+2877;1;Psychological health intervention;3;Psychotherapy ;Family constellation;NPI1.3.1
+4465;1;Psychological health intervention;3;Psychotherapy ;Focusing;NPI1.3.1
+722;1;Psychological health intervention;3;Psychotherapy ;Functional analysis;NPI1.3.1
+4873;1;Psychological health intervention;3;Psychotherapy ;Gestalt therapy;NPI1.3.1
+851;1;Psychological health intervention;3;Psychotherapy ;Humanistic approach;NPI1.3.1
+5925;1;Psychological health intervention;3;Psychotherapy ;Hypnosis;NPI1.3.1
+5928;1;Psychological health intervention;3;Psychotherapy ;Hypnotherapy;NPI1.3.1
+9226;1;Psychological health intervention;3;Psychotherapy ;Individual analytical psychodrama;NPI1.3.1
+723;1;Psychological health intervention;3;Psychotherapy ;Integrative Dream Awakened Analysis;NPI1.3.1
+9237;1;Psychological health intervention;3;Psychotherapy ;Integrative Psychotherapy;NPI1.3.1
+9239;1;Psychological health intervention;3;Psychotherapy ;Intensive andBrief psychodynamic psychotherapy;NPI1.3.1
+9242;1;Psychological health intervention;3;Psychotherapy ;Intersubjective psychotherapyBased on catharsis;NPI1.3.1
+9243;1;Psychological health intervention;3;Psychotherapy ;Intersubjective psychotherapyBased on transfer;NPI1.3.1
+3615;1;Psychological health intervention;3;Psychotherapy ;Libidinal ecology;NPI1.3.1
+6687;1;Psychological health intervention;3;Psychotherapy ;logotherapy;NPI1.3.1
+9244;1;Psychological health intervention;3;Psychotherapy ;Magic-religious psychotherapies;NPI1.3.1
+9245;1;Psychological health intervention;3;Psychotherapy ;Moral psychotherapies;NPI1.3.1
+3874;1;Psychological health intervention;3;Psychotherapy ;Motivational Interview;NPI1.3.1
+7534;1;Psychological health intervention;3;Psychotherapy ;Music therapy;NPI1.3.1
+7657;1;Psychological health intervention;3;Psychotherapy ;Narco-analysis;NPI1.3.1
+852;1;Psychological health intervention;3;Psychotherapy ;Narrative approach;NPI1.3.1
+9099;1;Psychological health intervention;3;Psychotherapy ;Neuro Linguistic Programming;NPI1.3.1
+8372;1;Psychological health intervention;3;Psychotherapy ;Palo Alto School;NPI1.3.1
+9230;1;Psychological health intervention;3;Psychotherapy ;Positive psychology;NPI1.3.1
+6061;1;Psychological health intervention;3;Psychotherapy ;Postural integration;NPI1.3.1
+3088;1;Psychological health intervention;3;Psychotherapy ;Psychoanalysis cure;NPI1.3.1
+9238;1;Psychological health intervention;3;Psychotherapy ;Psychoanalytic Psychotherapy;NPI1.3.1
+9224;1;Psychological health intervention;3;Psychotherapy ;psychodrama;NPI1.3.1
+9227;1;Psychological health intervention;3;Psychotherapy ;psychogenealogy;NPI1.3.1
+724;1;Psychological health intervention;3;Psychotherapy ;Psychological analysis;NPI1.3.1
+725;1;Psychological health intervention;3;Psychotherapy ;Psycho-organic analysis;NPI1.3.1
+9231;1;Psychological health intervention;3;Psychotherapy ;Psychosynthesis;NPI1.3.1
+9241;1;Psychological health intervention;3;Psychotherapy ;Psychotherapies of the movement of the human potential;NPI1.3.1
+9240;1;Psychological health intervention;3;Psychotherapy ;Psychotherapies withBodily or artistic mediations;NPI1.3.1
+9235;1;Psychological health intervention;3;Psychotherapy ;Psychotherapy and emotion;NPI1.3.1
+9246;1;Psychological health intervention;3;Psychotherapy ;Rational psychotherapy;NPI1.3.1
+726;1;Psychological health intervention;3;Psychotherapy ;Reichian analysis;NPI1.3.1
+727;1;Psychological health intervention;3;Psychotherapy ;Sophia Analysis;NPI1.3.1
+9234;1;Psychological health intervention;3;Psychotherapy ;Supportive Psychotherapy;NPI1.3.1
+728;1;Psychological health intervention;3;Psychotherapy ;Transactional Analysis;NPI1.3.1
+6464;1;Psychological health intervention;4;Zootherapy;Cat;NPI1.4.1
+6465;1;Psychological health intervention;4;Zootherapy;The dog;NPI1.4.1
+6325;1;Psychological health intervention;4;Zootherapy;The donkey;NPI1.4.1
+6470;1;Psychological health intervention;4;Zootherapy;The dwarf rabbit;NPI1.4.1
+6327;1;Psychological health intervention;4;Zootherapy;The goat;NPI1.4.1
+6467;1;Psychological health intervention;4;Zootherapy;The guinea pig;NPI1.4.1
+6473;1;Psychological health intervention;4;Zootherapy;The pony;NPI1.4.1
+6466;1;Psychological health intervention;4;Zootherapy;The puppy;NPI1.4.1

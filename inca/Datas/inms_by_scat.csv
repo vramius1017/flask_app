@@ -1,0 +1,113 @@
+id;scatcode;catcode;charac;code
+389;1;1;Accompanying activities;NPI1.1.1
+5982;1;1;Animated picture;NPI1.1.1
+1197;1;1;Artistic workshop;NPI1.1.1
+4105;1;1;Body language;NPI1.1.1
+2465;1;1;Cinapse;NPI1.1.1
+1198;1;1;Citizen Workshop;NPI1.1.1
+910;1;1;Clay;NPI1.1.1
+2541;1;1;clown;NPI1.1.1
+2584;1;1;collage;NPI1.1.1
+1199;1;1;Community Workshop;NPI1.1.1
+1204;1;1;Creative Workshop;NPI1.1.1
+3404;1;1;discussions;NPI1.1.1
+3269;1;1;Drawing;NPI1.1.1
+8430;1;1;Heritage;NPI1.1.1
+1200;1;1;Humanitarian Workshop;NPI1.1.1
+1203;1;1;Initiation Workshop;NPI1.1.1
+6052;1;1;Installation;NPI1.1.1
+1201;1;1;Intercultural Workshop;NPI1.1.1
+6088;1;1;Invitations to a cultural outing;NPI1.1.1
+6673;1;1;Literature;NPI1.1.1
+7030;1;1;Mask;NPI1.1.1
+7320;1;1;Mime;NPI1.1.1
+7390;1;1;Modeling;NPI1.1.1
+8425;1;1;Modeling clay;NPI1.1.1
+7434;1;1;Movement;NPI1.1.1
+7535;1;1;Music;NPI1.1.1
+7384;1;1;Musical mnemotherapy;NPI1.1.1
+8453;1;1;Painting;NPI1.1.1
+8540;1;1;Photo;NPI1.1.1
+8542;1;1;Photography;NPI1.1.1
+8543;1;1;Photolangage;NPI1.1.1
+9125;1;1;Promotion of the cultural offer;NPI1.1.1
+7014;1;1;puppets;NPI1.1.1
+9976;1;1;Sculpture;NPI1.1.1
+1202;1;1;Social Workshop;NPI1.1.1
+2879;1;1;Tale;NPI1.1.1
+1162;1;1;Visual and Media Arts;NPI1.1.1
+3622;1;1;Writing;NPI1.1.1
+3623;1;1;Writing;NPI1.1.1
+200;3;1;Abreaction;NPI1.3.1
+9225;3;1;Analytical psychodrama group;NPI1.3.1
+9228;3;1;Analytical psychology;NPI1.3.1
+1163;3;1;Art therapy;NPI1.3.1
+721;3;1;Bioenergetic analysis;NPI1.3.1
+1565;3;1;biofeedback;NPI1.3.1
+9233;3;1;Body Psychotherapy;NPI1.3.1
+7269;3;1;Breastplate Release Method (MLC);NPI1.3.1
+7266;3;1;Cathartic method;NPI1.3.1
+9232;3;1;CognitiveBehavioral psychotherapy;NPI1.3.1
+7267;3;1;Coue method;NPI1.3.1
+9660;3;1;Counseling;NPI1.3.1
+3174;3;1;Daseins analysis;NPI1.3.1
+9728;3;1;Daydream;NPI1.3.1
+9729;3;1;Daydream;NPI1.3.1
+3505;3;1;dramatherapy;NPI1.3.1
+9229;3;1;Dynamic psychology;NPI1.3.1
+2632;3;1;Easy communication;NPI1.3.1
+3801;3;1;Emdr (eye movement desensitization and reprocessing);NPI1.3.1
+3804;3;1;Emet analysis;NPI1.3.1
+3809;3;1;Emotional Freedom Technique (Emotional Freedom Technique);NPI1.3.1
+5926;3;1;Ericksonian Hypnosis;NPI1.3.1
+5927;3;1;European hypnosis;NPI1.3.1
+9236;3;1;Existential psychotherapy;NPI1.3.1
+4165;3;1;Eye movement desensitization and reprocessing;NPI1.3.1
+2877;3;1;Family constellation;NPI1.3.1
+4465;3;1;Focusing;NPI1.3.1
+722;3;1;Functional analysis;NPI1.3.1
+4873;3;1;Gestalt therapy;NPI1.3.1
+851;3;1;Humanistic approach;NPI1.3.1
+5925;3;1;Hypnosis;NPI1.3.1
+5928;3;1;Hypnotherapy;NPI1.3.1
+9226;3;1;Individual analytical psychodrama;NPI1.3.1
+723;3;1;Integrative Dream Awakened Analysis;NPI1.3.1
+9237;3;1;Integrative Psychotherapy;NPI1.3.1
+9239;3;1;Intensive andBrief psychodynamic psychotherapy;NPI1.3.1
+9242;3;1;Intersubjective psychotherapyBased on catharsis;NPI1.3.1
+9243;3;1;Intersubjective psychotherapyBased on transfer;NPI1.3.1
+3615;3;1;Libidinal ecology;NPI1.3.1
+6687;3;1;logotherapy;NPI1.3.1
+9244;3;1;Magic-religious psychotherapies;NPI1.3.1
+9245;3;1;Moral psychotherapies;NPI1.3.1
+3874;3;1;Motivational Interview;NPI1.3.1
+7534;3;1;Music therapy;NPI1.3.1
+7657;3;1;Narco-analysis;NPI1.3.1
+852;3;1;Narrative approach;NPI1.3.1
+9099;3;1;Neuro Linguistic Programming;NPI1.3.1
+8372;3;1;Palo Alto School;NPI1.3.1
+9230;3;1;Positive psychology;NPI1.3.1
+6061;3;1;Postural integration;NPI1.3.1
+3088;3;1;Psychoanalysis cure;NPI1.3.1
+9238;3;1;Psychoanalytic Psychotherapy;NPI1.3.1
+9224;3;1;psychodrama;NPI1.3.1
+9227;3;1;psychogenealogy;NPI1.3.1
+724;3;1;Psychological analysis;NPI1.3.1
+725;3;1;Psycho-organic analysis;NPI1.3.1
+9231;3;1;Psychosynthesis;NPI1.3.1
+9241;3;1;Psychotherapies of the movement of the human potential;NPI1.3.1
+9240;3;1;Psychotherapies withBodily or artistic mediations;NPI1.3.1
+9235;3;1;Psychotherapy and emotion;NPI1.3.1
+9246;3;1;Rational psychotherapy;NPI1.3.1
+726;3;1;Reichian analysis;NPI1.3.1
+727;3;1;Sophia Analysis;NPI1.3.1
+9234;3;1;Supportive Psychotherapy;NPI1.3.1
+728;3;1;Transactional Analysis;NPI1.3.1
+6464;4;1;Cat;NPI1.4.1
+6465;4;1;The dog;NPI1.4.1
+6325;4;1;The donkey;NPI1.4.1
+6470;4;1;The dwarf rabbit;NPI1.4.1
+6327;4;1;The goat;NPI1.4.1
+6467;4;1;The guinea pig;NPI1.4.1
+6473;4;1;The pony;NPI1.4.1
+6466;4;1;The puppy;NPI1.4.1
