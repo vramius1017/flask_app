@@ -1,7 +1,7 @@
 ﻿<!--
    page index présentation 
     INCA Search
-    pour django 2.2
+    pour flask
 -->
 <html>
 
@@ -14,10 +14,22 @@
     </br><br>
     <!---texte présentation application -->
    
-    {% block present_texte %}ceci est l'application de recherches d'études sur les INM{% endblock present_texte %}
-    
+    {% block present_texte %}
+     <h1 align="center">ceci est l'application de recherches d'études sur les INM et une maladie :</h1><br>
+     <h3 align="center"> Vous allez selectionner une categorie puis une sous-categorie puis l'inm correspondante à ces choix.</h3>
+     <h3 align="center"> Ensuite , vous selectionnerez une maladie soit par son nom générique, soit par sa localisation ,soit par des mots clés synonymes.</h3>
+     <h3 align="center">Ainsi vous allez fabriquer la requête sur les études d'essais randomisées controllés</h3>
+    <h3 align="center"> issue de revues Cochrane concernant l'inm et la maladie selectionnée.</h3>
+    <br><br>
+    <p align="center"><a href="/selection/cat/"><button type="button" class="btn btn-outline-primary">Demarrer</button></a></p>
+    <br>
+       {% endblock present_texte %}
 
     <!--- fin texte -->
+    
+    
+
+    </br><br">
     <p align="center"><a href="/"><button type="button" class="btn btn-outline-primary">Retour à la page d'acceuil</button></a></p>
 </body>
 

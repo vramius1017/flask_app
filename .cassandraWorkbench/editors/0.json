@@ -1,0 +1,1 @@
+{"body":"select id ,scatcode,catcode from scats_by_cat where scatcode = 1 and catcode = 1 allow filtering;\r\n","clusterName":"Cluster AllowAllAuthenticator","filename":"script_1.cql","id":"ZqM74Lgp3mYbniT6","keyspace":"system","modified":true,"source":"action"}

@@ -32,13 +32,13 @@
 
                               <!-- titre de la page  -->
 
-                              <h1 align="center">{% block present_title  %}{% endblock  %}</h1>
+                              <h1 align="center">{% block present_title  %} {% endblock  %}</h1>
 
 
                                <!---texte présentation -->
                                 
                               <div class="">
-                                   <p align="center">{% block present_texte  %}{% endblock  %}</p>
+                                   <p align="center">{% block present_texte  %} {% endblock  %}</p>
                               </div>
                                 
                    
@@ -50,10 +50,10 @@
 
                  <p align="center"><a href="#"><button type="button" class="btn btn-outline-primary"></button></a></p>
 
-                -->
-                    <h1 align="center" class="button">{{error}}</h1>
-                    <br><br>
-
+                -->  <h1 align="center">{{error}}</h1>
+                     <br>
+                     <h1 align="center"><img src="{{im}}"></h1>
+                     <br>
                      <p align="center"><a href="/"><button type="button" class="btn btn-outline-primary">Retour à la page de Connexion</button></a></p>
                   
                     

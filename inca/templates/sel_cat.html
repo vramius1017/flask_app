@@ -1,0 +1,40 @@
+<html>
+
+{% extends "base.html" %}
+{% block headder %}
+{% endblock headder %}
+{% block present_title %} Bienvenue sur INCA Search {% endblock present_title%}
+<body>
+     {% block present_texte %}
+   
+    <div class="row">
+    <div class="col-sm-2">
+     <form>
+      <select name = "category" class = "custom-select">
+        <option selected>Category Selection</option>
+        {% for cat  in cats : %}
+        <option >{{cat.catname}}</option>
+        {% endfor %} 
+      </select>
+     </form>
+     </div>
+     </div>
+  
+    <div class="row">
+    <div class="col-sm-2">
+     <form>
+      <select name = "sub-category" class = "custom-select">
+        <option selected>Sub-Category Selection</option>
+        {% for scat  in scats : %}
+        <option >{{scat.scatname}}</option>
+        {% endfor %} 
+      </select>
+     </form>
+     </div>
+     </div>
+      
+      {% endblock present_texte %}
+     
+</body>
+
+</html>

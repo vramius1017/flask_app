@@ -14,6 +14,8 @@ scipy = "*"
 scikit-learn = "*"
 flask-cqlalchemy = "*"
 jupyter = "*"
+blist = "*"
+flask-cassandra = "*"
 
 [requires]
 python_version = "3.8"

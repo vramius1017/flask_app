@@ -1,0 +1,1 @@
+select * from inms_by_scat where scatcode = 2 and catcode = 1 allow filtering;
