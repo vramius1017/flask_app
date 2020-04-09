@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\sacha\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "python.pythonPath": "C:\\Users\\sacha\\.virtualenvs\\flask_app-1gOGhn5N\\Scripts\\python.exe",
     "cassandraWorkbench.activeClusterName": "Cluster AllowAllAuthenticator",
     "cassandraWorkbench.activeKeyspace": [
         [

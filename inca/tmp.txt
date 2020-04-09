@@ -1,0 +1,39 @@
+""" @app.route("/selection/cat/")
+def sel_cat():
+    cqcat = "SELECT catname FROM cat"
+    cats = session.execute(cqcat)   
+    return render_template('sel_cat.html',cats=cats)
+
+def get_cat():
+    pass
+#cat = request.form.get['']
+
+def sel_scat():
+    cqscat = "select * from scats_by_cat" 
+    scats = session.execute(cqscat)
+
+    return render_template('sel_cat.html',scats=scats) """
+
+
+#group_id = SelectField(u'Group', coerce=int)
+    def edit_user(request, id):
+    user = User.query.get(id)
+    form = UserDetails(request.POST, obj=user)
+    form.group_id.choices = [(g.id, g.name) for g in Group.query.order_by('name')]
+
+
+    {% comment %} </div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Selection d'une sous-categorie</h3>
+
+    </div>
+
+    <div class="col-sm-4">
+      <h3>Selection d'une Intervention INM</h3>
+      
+    </div>
+  </div>
+ {% endcomment %}
+
+

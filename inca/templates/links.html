@@ -3,18 +3,11 @@
 
 <body>
     <div align="center">
-   <ul>
-          <!--<a href="https://www.niri.fr" class="btn btn-outline-primary">NIRI</a>
-          <a href="https://www.nishare.fr" class="btn btn-outline-primary">NISHARE</a>
-          <a href="https://www.inmcancer.fr" class="btn btn-outline-primary">Inmcancer</a>
-          <a href="https://www.motrial.fr" class="btn btn-outline-primary">Motrial</a>
-          <a href="https://www.ncbi.nlm.nih.gov/mesh" class="btn btn-outline-primary">Mesh</a>
-          <a href="https://www.ncbi.nlm.nih.gov/pubmed/" class="btn btn-outline-primary">Pubmed</a>
-          <a href="https://www.cochranelibrary.com/cdsr/reviews" class="btn btn-outline-primary">Cochrane Library</a>-->
+      <ul>
           {% for lien in liens : %}
           <a href="{{lien.url}}" class="btn btn-outline-primary">{{lien.name}}</a>
           {% endfor %}
-    </ul>
+     </ul>
     </div>
 
 </body>
