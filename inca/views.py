@@ -23,12 +23,15 @@ def index():
     liens = session.execute(cqlink)  
     return render_template('index.html',liens=liens)
 
+
+############################ Selction ##########################    
+
 @app.route("/selection/") 
 def selection():
     return render_template('search.html')
 
 
-
+############################# INM #################################
 
 @app.route("/selection/cat/", methods=['post','get'])
 def sel_cat():
@@ -77,6 +80,23 @@ def sel_inm():
 @app.route("/selection/inm/alpha" , methods=['get','post'])
 def sel_alfa():   # requetes alphabetiques
     pass
+
+
+################### Deseases   Cancer Diabetes ################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+############################ Proposition #########################################
 
 @app.route("/proposition/")
 def proposition():
