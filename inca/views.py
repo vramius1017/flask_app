@@ -11,7 +11,7 @@ cluster = Cluster(['127.0.0.1','9042'])
 session = cluster.connect()
 session.set_keyspace("inca_test")
 
-inm = ""
+inms = ""
 cancer = ""
 
 
@@ -50,14 +50,33 @@ def sel_scat():
     #form2.scat = SelectField(u'sous-categorie',choices=form2.scat.choices,validators=[])
 
     return render_template('sel_scat.html',form1=form1,form2=form2,x=x,r=r,cp=cp,t=t)
+@app.route("/selection/inm/count/", methods=['get','post'])
+def inm_count():
+    pass  #calcul du nombre d'inm par scat
+        # selon le nombre  sel_inm , inm_text, sel_inm_alpha
 
-@app.route("/selection/inm" , methods=['get','post'])
+@app.route("/selection/inm/text" , methods=['get','post'])
+def sel_inm_text():   # entrer un text  champ à sécuriser
+    pass   
+    #return render_template('sel_inm.html')
+
+
+@app.route("/selection/inm/" , methods=['get','post'])
 def sel_inm():
+    
     form2 = SelScatForm()
     form3 = SelInmForm()
     y = request.form['scat']
     # requete selection des inm   !!! aux nombres
-    # requetes alphabetiques
+    # select count
+    # select inm limit 10, limit 20
+    # select fiemld
+    inms = request.form['inm']
+    return render_template('sel_inm.html',y=y,inms=inms)
+
+@app.route("/selection/inm/alpha" , methods=['get','post'])
+def sel_alfa():   # requetes alphabetiques
+    pass
 
 @app.route("/proposition/")
 def proposition():
