@@ -7,34 +7,30 @@
 <body>
      {% block present_texte %}
 
-  <h1 align="center">Recherche par categorie , sous-catégorie et INM et  Selection d'une maladie </h1>
-  <p align="center">utiliser les menus déroulant ci-dessous</p>
-   <p align="center">Test : {{a}}</p>
-   <p align="center">Test : {{b}}</p>
-  <p align="center">Test : {{c}}</p>
-   <p align="center">Test recuperation select cat: {{d}}</p>
- <p align="center">Test recuperation select scat: {{e}}</p>
-
-  <div class="row">
-    <div class="col-sm-6">
-      <h3>Selection d'une categorie</h3>
-      <form action="" method='post'> 
-         <div class="form-group">
-             {{form.cat.label}}
-             {{form.cat}}
-         </div>
-         {{form.submit}}
-
-      <h3>Selection d'une sous-categorie</h3>
-      <form action="" method='post'> 
-         <div class="form-group">
-             {{form2.scat.label}}
-             {{form2.scat}}
-         </div>
-         {{form2.submit2}}
-      </form>
-    </div>
+  <h1 align="center">Recherche par categorie d'intervention non médicamenteuse</h1>
+  <p align="center">utiliser le menu ci-dessous</p>
+  <br><br>
    
+  
+  
+   
+    
+<br><br>
+
+
+<div align="center">
+      <h3>Selection d'une categorie</h3>
+      <form action="/selection/cat/scat/" method='post'> 
+         <div class="form-group">
+             {{form1.cat.label}}
+             {{form1.cat}}
+         </div>
+         {{form1.submit}}
+      </form>
+
+         
+</div>  
+  
   
 
  

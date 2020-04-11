@@ -1,18 +1,24 @@
-from flask import Flask,render_template,request,url_for
+from flask import Flask,render_template,request,url_for,redirect
 import json
 from cassandra.cluster import Cluster
 from inca.forms import SelCatForm,SelScatForm
 from config import Config
-from wtforms import StringField,SelectField,SubmitField
 
 app = Flask(__name__)
 app.config.from_object(Config)
+
 cluster = Cluster(['127.0.0.1','9042'])
 session = cluster.connect()
 session.set_keyspace("inca_test")
 
+inm = ""
+cancer = ""
+
+
+
 @app.route("/")
 def index():
+    
     cqlink = "SELECT name,url FROM links"
     liens = session.execute(cqlink)  
     return render_template('index.html',liens=liens)
@@ -21,22 +27,49 @@ def index():
 def selection():
     return render_template('search.html')
 
-@app.route("/selection/cat/",methods=['get','post'])
+
+
+
+@app.route("/selection/cat/", methods=['post','get'])
 def sel_cat():
-    form = SelCatForm()
+    form1 = SelCatForm()
+    
+    
+    #x = request.form['cat']
+    #t = x[1][0]
+    #x = "Others health intervention"
+    #r = session.execute("SELECT scatname from scats_by_cat where catname= "+"'"+str(x)+"'")
+    # cp = session.execute("SELECT count(*) from scats_by_cat where catname= "+"'"+str(x)+"'")
+    #t = cp[0][0]
+    #form2.scat.choices = [((r[0][0],r[0][0]))]
+    #for i in range(1,t-1):
+    #   form2.scat.choices.append((r[i][0],r[i][0]))
+    #form2.scat = SelectField(u'sous-categorie',choices=form2.scat.choices,validators=[])
+    return render_template('sel_cat.html',form1=form1)#,x=x)#,r=r,cp=cp,t=t)
 
-    cql = "SELECT scatname FROM scats_by_cat where catcode = 1" 
-    cq = session.execute(cql)
-    s1 = str(cq[0][0])
-    s1 = str(cq[0][0])
-    s1 = str(cq[0][0])
+@app.route("/selection/cat/scat/", methods=['get','post'])
+def sel_scat():
+    form1 = SelCatForm()
     form2 = SelScatForm()
-    form2.scat = SelectField(u'subcategory',choices=[('sc1',1),('sc2',2),('sc3',3)],validators=[])
-    return render_template('sel_cat.html',form=form,form2=form2)
+    x = request.form['cat']
+    r = session.execute("SELECT scatname from scats_by_cat where catname= "+"'"+str(x)+"'")
+    cp = session.execute("SELECT count(scatname) from scats_by_cat where catname= "+"'"+str(x)+"'")
+    t = cp[0][0]
 
-@app.route("/selection/inm")
+    form2.scat.choices = [((r[0][0],r[0][0]))]
+    for i in range(1,t):
+       form2.scat.choices.append((r[i][0],r[i][0]))
+    #form2.scat = SelectField(u'sous-categorie',choices=form2.scat.choices,validators=[])
+
+    return render_template('sel_scat.html',form1=form1,form2=form2,x=x,r=r,cp=cp,t=t)
+
+@app.route("/selection/inm" , methods=['get','post'])
 def sel_inm():
-    pass
+    form2 = SelScatForm()
+    form3 = SelInmForm()
+    y = request.form['scat']
+    # requete selection des inm   !!! aux nombres
+    # requetes alphabetiques
 
 @app.route("/proposition/")
 def proposition():

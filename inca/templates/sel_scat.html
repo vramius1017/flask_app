@@ -5,7 +5,48 @@
 {% block present_title %} Bienvenue sur INCA Search - Selection{% endblock present_title%}
 <body>
 
+ {% block present_texte %}
 
+  <h1 align="center">Recherche par categorie , sous-catégorie et INM et  Selection d'une maladie </h1>
+  <p align="center">utiliser les menus déroulant ci-dessous</p>
+  <br><br>
+   
+   <p align="center">Test : requete cat : {{x}}</p>
+   <p align="center">Test : requete scat : {{r}}</p>
+   <!--<p align="center">Test : requete count scat : {{cp}}</p>-->
+   <p align="center">Test : requete count scat : {{t}}</p>
+    <!--<p align="center">Test : requete count scat : {{y}}</p>-->
+    
+<br><br>
+
+
+<div align="center">
+      <h3>Selection d'une categorie</h3>
+      <form action="" method='post'> 
+         <div class="form-group">
+             {{form1.cat.label}}
+             {{form1.cat}}
+         </div>
+         {{form1.submit}}
+      </form>
+
+      <h3>Selection d'une sous-categorie</h3>
+      <form action="" method='post'> 
+         <div class="form-group">
+             {{form2.scat.label}}
+             {{form2.scat}}
+         </div>
+         {{form2.submit2}}
+      </form>    
+</div>  
+  
+  
+
+ 
+  
+   
+      {% endblock present_texte %}
+     
 
 </body>
 </html>

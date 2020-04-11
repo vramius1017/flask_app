@@ -1,26 +1,10 @@
 """ @app.route("/selection/cat/")
-def sel_cat():
-    cqcat = "SELECT catname FROM cat"
-    cats = session.execute(cqcat)   
-    return render_template('sel_cat.html',cats=cats)
-
-def get_cat():
-    pass
-#cat = request.form.get['']
-
-def sel_scat():
-    cqscat = "select * from scats_by_cat" 
-    scats = session.execute(cqscat)
-
-    return render_template('sel_cat.html',scats=scats) """
-
-
-#group_id = SelectField(u'Group', coerce=int)
-    def edit_user(request, id):
-    user = User.query.get(id)
-    form = UserDetails(request.POST, obj=user)
-    form.group_id.choices = [(g.id, g.name) for g in Group.query.order_by('name')]
-
+# algo :
+     # appel du form3 --> creation d'une classe sur forms.py
+     # request['scat'] 
+     # deux requetes cql  les inms par scat selectionné  et le compteur du nb de ces inms par scat selectionné
+     # recuperation du compteur
+     #  boucle pour modifier le nombre d'inms  dynamiquement dans  le menu selon la scat selectionné
 
     {% comment %} </div>
     </div>
@@ -36,4 +20,75 @@ def sel_scat():
   </div>
  {% endcomment %}
 
+@app.route("/selection/cat/",methods=['get','post'])
+def sel_cat():
+    form = SelCatForm()
+    form2 = SelScatForm()
+    c = request.form['cat']
+    form2.selcat(c)
 
+# form SelScatForm(FlaskForm):
+
+    scat = SelectField(u'sous-categorie',choices=[('sc1','sc1'),('sc2','sc2'),('sc3','sc32')],validators=[])
+    submit2 = SubmitField('Validation scat')
+
+    def selscat(x):
+        form2 = SelScatForm()
+        form = SelCatForm()
+        x = form.cat
+        r = session.execute("SELECT scatname from scats_by_cat where catname="+"'"+x+"'")
+        cp = session.execute("SELECT count(*) from scats_by_cat where catname="+"'"+x+"'")
+        t = cp[0][0]
+        form2.scat.choices = [((r[0][0],r[0][0]))]
+        for i in range(1,t):
+           form2.scat.choices.append((r[i][0],r[i][0]))
+    
+
+        
+     # algo :
+     # appel du form3 --> creation d'une classe sur forms.py
+     # request['scat'] 
+     # deux requetes cql  les inms par scat selectionné  et le compteur du nb de ces inms par scat selectionné
+     # recuperation du compteur
+     #  boucle pour modifier le nombre d'inms  dynamiquement dans  le menu selon la scat selectionné
+    return render_template('sel_cat.html',form=form,form2=form2,r=r,c=c,cp=cp,t=t,x=x)
+
+class ChScat(SelScatForm):
+        form2 = SelScatForm()
+        form = SelCatForm()
+        x = request.form['cat']
+        r = session.execute("SELECT scatname from scats_by_cat where catname="+"'"+str(x)+"'")
+        cp = session.execute("SELECT count(*) from scats_by_cat where catname="+"'"+str(x)+"'")
+        t = cp[0][0]
+        form2.scat.choices = [((r[0][0],r[0][0]))]
+        for i in range(1,t):
+           form2.scat.choices.append((r[i][0],r[i][0]))
+        scat = SelectField(u'sous-categorie',choices=form2.scat.choices,validators=[])
+
+
+
+
+
+
+
+
+#html du formulaire d'inm :
+ <!--  <h3>Selection d'une Intervention non médicamenteuse</h3>
+       <form action="selection/cat/" method='post'> 
+         <div class="form-group">
+             {{form3.inm.label}}
+             {{form3.inm}}
+         </div>
+         {{form3.submit3}}
+        </form> -->
+
+# formulaire inm :
+#class SelInm(FlaskForm):
+  #inm = SelectField(u'Intervention', choices=[],validators=[])
+  #submit3 = SubmitField('Validation inm')
+
+    à tester : 
+ @app.route("/selection/cat/",methods=['get','post'])   
+ def sel_cat():
+    form = SelScatForm()
+    return render_template('sel_cat.html',form=form)

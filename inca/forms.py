@@ -3,7 +3,7 @@ from wtforms import StringField,SelectField,SubmitField
 from wtforms.validators import DataRequired
 from cassandra.cqlengine.management import sync_table
 from cassandra.cluster import Cluster
-from flask import request
+from flask import Flask,request
 
 cluster = Cluster(['127.0.0.1','9042'])
 session = cluster.connect()
@@ -18,12 +18,17 @@ class SelCatForm(FlaskForm):
     c = (str(r[2][0]))
     d = (str(r[3][0]))
     e = (str(r[4][0]))
-    cat = SelectField(u'category',choices = [(a,a),(b,b),(c,c),(d,d),(e,e)],validators=[])
-    #group_id = SelectField(u'Group', coerce=int)
+    cat = SelectField(u'categorie',choices = [(a,a),(b,b),(c,c),(d,d),(e,e)],validators=[])
     submit = SubmitField('Validation  cat')
 
 
 class SelScatForm(FlaskForm):
-
-    scat = SelectField(u'subcategory',choices=[('sc1',1),('sc2',2),('sc3',3)],validators=[])
+    
+    scat = SelectField(u'sous-categorie',choices=[],validators=[])
     submit2 = SubmitField('Validation scat')
+
+
+class SelInmForm(FlaskForm):
+
+    inm = StringField(u'intervention')
+    submit3 = SubmitField('Validation inm')
