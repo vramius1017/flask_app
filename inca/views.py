@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,url_for,redirect
 import json
 from cassandra.cluster import Cluster
-from inca.forms import SelCatForm,SelScatForm
+from inca.forms import SelCatForm,SelScatForm,SelInmForm
 from config import Config
 
 app = Flask(__name__)
@@ -33,18 +33,6 @@ def selection():
 @app.route("/selection/cat/", methods=['post','get'])
 def sel_cat():
     form1 = SelCatForm()
-    
-    
-    #x = request.form['cat']
-    #t = x[1][0]
-    #x = "Others health intervention"
-    #r = session.execute("SELECT scatname from scats_by_cat where catname= "+"'"+str(x)+"'")
-    # cp = session.execute("SELECT count(*) from scats_by_cat where catname= "+"'"+str(x)+"'")
-    #t = cp[0][0]
-    #form2.scat.choices = [((r[0][0],r[0][0]))]
-    #for i in range(1,t-1):
-    #   form2.scat.choices.append((r[i][0],r[i][0]))
-    #form2.scat = SelectField(u'sous-categorie',choices=form2.scat.choices,validators=[])
     return render_template('sel_cat.html',form1=form1)#,x=x)#,r=r,cp=cp,t=t)
 
 @app.route("/selection/cat/scat/", methods=['get','post'])
