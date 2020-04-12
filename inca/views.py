@@ -64,7 +64,7 @@ def sel_inm_text():   # entrer un text  champ à sécuriser
     #return render_template('sel_inm.html')
 
 
-@app.route("/selection/inm/" , methods=['get','post'])
+@app.route("/selection/inm/", methods=['get','post'])
 def sel_inm():
     
     form2 = SelScatForm()
