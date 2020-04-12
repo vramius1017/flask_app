@@ -66,7 +66,7 @@ def sel_inm_text():   # entrer un text  champ à sécuriser
 
 @app.route("/selection/inm/", methods=['get','post'])
 def sel_inm():
-    
+    form1 = SelCatForm()
     form2 = SelScatForm()
     form3 = SelInmForm()
     y = request.form['scat']
@@ -74,8 +74,8 @@ def sel_inm():
     # select count
     # select inm limit 10, limit 20
     # select fiemld
-    inms = request.form['inm']
-    return render_template('sel_inm.html',y=y,inms=inms)
+    #inms = request.form['inm']
+    return render_template('sel_inm.html',y=y,form1=form1,form2=form2,form3=form3)#,inms=inms)
 
 @app.route("/selection/inm/alpha" , methods=['get','post'])
 def sel_alfa():   # requetes alphabetiques
@@ -120,7 +120,7 @@ def PageError():
     return render_template('404.html',error=error)
 
 
-@app.route("/travaux/")
+@app.route("/travaux/", methods=['get','post'])
 def PageTravaux():
     error = "Page en travaux"
     im = url_for('static',filename='img/tr.jpg')
