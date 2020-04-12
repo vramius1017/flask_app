@@ -102,16 +102,18 @@ def sel_alfa():   # requetes alphabetiques
 def proposition():
     return render_template('proposition.html')
 
+
+############################### Validation ########################################
 @app.route("/validation/")
 def validate():
     return render_template('validate.html')
 
-
+############################# routes beta ######################################
 @app.route("/divers/")
 def   divers():
     return  render_template('divers.html')  
 
-
+############################## routes erreurs ###################################
 @app.route("/404/")
 def PageError():
     error="Page 404"
