@@ -1,1 +1,88 @@
+<html>
+
+{% extends "base.html" %}
+{% block headder %}
+{% endblock headder %}
+{% block present_title %} Bienvenue sur INCA Proposition{% endblock present_title%}
+
+
+
+<body>
+{% block present_texte %}
+<h2 align="center">Proposition d'une INM et d'une ou plusieurs études se rapportant à cette INM</h2><br>
+<div align="center">
+<!--formulaire parametres de l'intervention proposé
+                 @ champs :
+          nom proposé de l'inm
+          select categorie
+          lien vers études
+               doi 
+            abstract 
+          commentaires -->
+
+ 
+    <div align="center">
+    <!--nom proposé de l'inm-->
+     <form action="/proposition/mail/"  method='POST'>
+        <div class="form-group">
+           <div class="col-7">
+           <label for="inmail">Adresse Email</label>
+            <input type="email" class="form-control" id="inmail" arial-describedby="emailHelp" placeholder="Email"></input>
+            <small id="emailHelp">votre email n'est utilisé que pour vous confirmer et vous informer sur votre proposition d'intervention</small>
+           <label for="name">nom proposé de l'intervention</label>
+            <input type="text" class="form-control" id="name" placeholder="nom INM"></input>
+            <small>nom en anglais de 50 charactéres maximun</small>
+            <br><br>
+            <label form="link">lien vers l'étude sur l'intervention</label>
+            <input type="link" class="form-control" id="link" placeholder="URL de l'étude"></input>
+            <small>http:// ou https// et l'adresse URL</small>
+            <br><br>
+            <label form="doi">DOI de  l'étude sur l'intervention</label>
+            <input type="doi" class="form-control" id="link" placeholder="DOI de l'étude"></input>
+           </div> 
+         </div>
+
+    <!-- select categorie de l'inm-->
+        <h3 align="center">Selection de la categorie de l'INM proposé</h3>
+       <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optradio">Psychological Health Interventions
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optradio">Physical Health Interventions
+            </label>
+          </div>
+          <div class="form-check-inline">
+                <label class="form-check-label">
+             <input type="radio" class="form-check-input" name="optradio">Nutritional Health Interventions
+           </label>
+         </div>
+         <div class="form-check-inline">
+                <label class="form-check-label">
+             <input type="radio" class="form-check-input" name="optradio">Digital Health Interventions
+           </label>
+         </div>
+         <div class="form-check-inline">
+                <label class="form-check-label">
+             <input type="radio" class="form-check-input" name="optradio">Other Health Interventions
+           </label>
+         </div><br><br>
+
+              <textarea name="abstract" row="100" cols="50">Résumé de l'étude sur l'INM</textarea>
+              <textarea name="comments"  row="100" cols="50">Commentaires</textarea>
+            <br><br>   
+          <div align="center">   
+           <button type="submit" class="btn btn-primary" >Submit</button>
+        </div>
+
+     </form>
+
+{% endblock present_texte %}
+</br><br">
 <p align="center"><a href="/"><button type="button" class="btn btn-outline-primary">Retour à la page d'acceuil</button></a></p>
+
+</body>
+
+</html>

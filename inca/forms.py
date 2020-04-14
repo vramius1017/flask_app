@@ -30,5 +30,5 @@ class SelScatForm(FlaskForm):
 
 class SelInmForm(FlaskForm):
 
-    inm = StringField(u'intervention')
+    inm = StringField(u'intervention',validators=[])
     submit3 = SubmitField('Validation inm')

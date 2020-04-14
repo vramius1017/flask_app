@@ -3,9 +3,12 @@ import json
 from cassandra.cluster import Cluster
 from inca.forms import SelCatForm,SelScatForm,SelInmForm
 from config import Config
+from flask_mail import Mail
+
 
 app = Flask(__name__)
 app.config.from_object(Config)
+mail = Mail(app)
 
 cluster = Cluster(['127.0.0.1','9042'])
 session = cluster.connect()
@@ -28,8 +31,8 @@ def index():
 
 @app.route("/selection/") 
 def selection():
-    return render_template('search.html')
 
+    return render_template('search.html')
 
 ############################# INM #################################
 
@@ -74,7 +77,6 @@ def sel_inm():
     # select count
     # select inm limit 10, limit 20
     # select fiemld
-    #inms = request.form['inm']
     return render_template('sel_inm.html',y=y,form1=form1,form2=form2,form3=form3)#,inms=inms)
 
 @app.route("/selection/inm/alpha" , methods=['get','post'])
@@ -102,6 +104,9 @@ def sel_alfa():   # requetes alphabetiques
 def proposition():
     return render_template('proposition.html')
 
+@app.route("/proposition/mail/", methods=['get','post'])
+def prop_mail():
+    return render_template('p_mail.html')
 
 ############################### Validation ########################################
 @app.route("/validation/")
