@@ -87,8 +87,16 @@ def sel_alfa():   # requetes alphabetiques
 ################### Deseases   Cancer Diabetes ################################
 
 
+@app.route("/selection/desease/")
+def maladie():
+    pass
+@app.route("/selection/des/cancer/")
+def crabs():
+    pass
 
-
+@app.route("/selection/des/diabetes/")
+def sugar():
+    pass
 
 
 
@@ -106,15 +114,20 @@ def proposition():
 
 @app.route("/proposition/mail/", methods=['get','post'])
 def prop_mail():
+
     #sender = sacha.torres.ceps@outlook.fr
     # dest = request.form['inmail']
     # nominm = request.form['name']
     # lien = request.form['link']
     # doi = request.form['doi']
+    # abs = request.form['abstract']
+    # com = request.form['comments']
     #if form.validate():
-            # insert en db notval
-            # send mail
+            # insert en db notval -->
+            # qpop = session.execute("INSERT INTO NotVal (,,,) values ("+nominm+","+lien+","+doi+","+abs+","+com+")") ajouter une id uuid et un timestamp uuid()
+            # send mail -->
             #msg = Message("Proposition enregistrée et soumise sous peu à nos experts pour validation",sender = "sacha.torres.ceps@outlook.fr", recipients = ["""+dest+"""])
+            #mail.send(msg)
     return render_template('p_mail.html')
 
 ############################### Validation ########################################
