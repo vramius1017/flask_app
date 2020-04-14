@@ -114,7 +114,7 @@ def prop_mail():
     #if form.validate():
             # insert en db notval
             # send mail
-            #msg = M
+            #msg = Message("Proposition enregistrée et soumise sous peu à nos experts pour validation",sender = "sacha.torres.ceps@outlook.fr", recipients = ["""+dest+"""])
     return render_template('p_mail.html')
 
 ############################### Validation ########################################
