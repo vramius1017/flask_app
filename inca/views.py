@@ -4,7 +4,7 @@ from cassandra.cluster import Cluster
 from inca.forms import SelCatForm,SelScatForm,SelInmForm
 from config import Config
 from flask_mail import Mail
-
+from flask_mail import Message
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -106,6 +106,15 @@ def proposition():
 
 @app.route("/proposition/mail/", methods=['get','post'])
 def prop_mail():
+    #sender = sacha.torres.ceps@outlook.fr
+    # dest = request.form['inmail']
+    # nominm = request.form['name']
+    # lien = request.form['link']
+    # doi = request.form['doi']
+    #if form.validate():
+            # insert en db notval
+            # send mail
+            #msg = M
     return render_template('p_mail.html')
 
 ############################### Validation ########################################

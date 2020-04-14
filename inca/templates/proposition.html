@@ -29,6 +29,7 @@
            <label for="inmail">Adresse Email</label>
             <input type="email" class="form-control" id="inmail" arial-describedby="emailHelp" placeholder="Email"></input>
             <small id="emailHelp">votre email n'est utilisé que pour vous confirmer et vous informer sur votre proposition d'intervention</small>
+            <br><br>
            <label for="name">nom proposé de l'intervention</label>
             <input type="text" class="form-control" id="name" placeholder="nom INM"></input>
             <small>nom en anglais de 50 charactéres maximun</small>
@@ -37,8 +38,8 @@
             <input type="link" class="form-control" id="link" placeholder="URL de l'étude"></input>
             <small>http:// ou https// et l'adresse URL</small>
             <br><br>
-            <label form="doi">DOI de  l'étude sur l'intervention</label>
-            <input type="doi" class="form-control" id="link" placeholder="DOI de l'étude"></input>
+            <label for="doi">DOI de  l'étude sur l'intervention</label>
+            <input type="doi" class="form-control" id="doi" placeholder="DOI de l'étude"></input>
            </div> 
          </div>
 
@@ -80,7 +81,7 @@
      </form>
 
 {% endblock present_texte %}
-</br><br">
+</br>
 <p align="center"><a href="/"><button type="button" class="btn btn-outline-primary">Retour à la page d'acceuil</button></a></p>
 
 </body>
