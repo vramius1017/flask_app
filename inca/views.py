@@ -53,18 +53,9 @@ def sel_scat():
     form2.scat.choices = [((r[0][0],r[0][0]))]
     for i in range(1,t):
        form2.scat.choices.append((r[i][0],r[i][0]))
-    #form2.scat = SelectField(u'sous-categorie',choices=form2.scat.choices,validators=[])
-
+    
     return render_template('sel_scat.html',form1=form1,form2=form2,x=x,r=r,cp=cp,t=t)
-@app.route("/selection/inm/count/", methods=['get','post'])
-def inm_count():
-    pass  #calcul du nombre d'inm par scat
-        # selon le nombre  sel_inm , inm_text, sel_inm_alpha
 
-@app.route("/selection/inm/text" , methods=['get','post'])
-def sel_inm_text():   # entrer un text  champ à sécuriser
-    pass   
-    #return render_template('sel_inm.html')
 
 
 @app.route("/selection/inm/", methods=['get','post'])
@@ -75,7 +66,11 @@ def sel_inm():
     y = request.form['scat']
     # requete selection des inm   !!! aux nombres
     # select count
+    #cp = session.execute("SELECT COUNT(*) FROM inms_by_scat WHERE scatname ='"+str(y)+"'")
     # select inm limit 10, limit 20
+    # r = session.execute("SELECT scatname from inms_by_scat WHERE scatname= "+"'"+str(y)+"' limit 10 ")
+    # s = session.execute("SELECT scatname from inms_by_scat WHERE scatname= "+"'"+str(y)+"' limit 15 ")
+    # t = session.execute("SELECT scatname from inms_by_scat WHERE scatname= "+"'"+str(y)+"' limit 20 ")
     # select fiemld
     return render_template('sel_inm.html',y=y,form1=form1,form2=form2,form3=form3)#,inms=inms)
 
@@ -83,7 +78,15 @@ def sel_inm():
 def sel_alfa():   # requetes alphabetiques
     pass
 
+@app.route("/selection/inm/count/", methods=['get','post'])
+def inm_count():
+    pass  #calcul du nombre d'inm par scat
+        # selon le nombre  sel_inm , inm_text, sel_inm_alpha
 
+@app.route("/selection/inm/text" , methods=['get','post'])
+def sel_inm_text():   # entrer un text  champ à sécuriser
+    pass   
+    #return render_template('sel_inm.html')
 ################### Deseases   Cancer Diabetes ################################
 
 
@@ -97,10 +100,21 @@ def crabs():
 @app.route("/selection/des/diabetes/")
 def sugar():
     pass
+@app.route("/selection/diabetes/loc")
+def sugar_loc():
+    pass
 
+@app.route("/selection/diabetes/syn")
+def sugar_syn():
+    pass
 
+@app.route("/selection/cancer/loc")
+def crabs_loc():
+    pass
 
-
+@app.route("/selection/diabetes/syn")
+def crabs_syn():
+    pass
 
 
 
