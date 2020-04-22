@@ -34,6 +34,13 @@ class SelInmForm(FlaskForm):
     submit3 = SubmitField('Validation inm')
 
 
+class SelOptionsForm(FlaskForm):
+    #sel_text = StringField(u'entrez votre intervention',validators=[])
+    #sel_inm = 
+    #sel_alpha =
+    pass
+
+
 
 class ProposititonForm(FlaskForm):
     pass

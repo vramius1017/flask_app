@@ -72,7 +72,7 @@ def sel_inm():
     # s = session.execute("SELECT scatname from inms_by_scat WHERE scatname= "+"'"+str(y)+"' limit 15 ")
     # t = session.execute("SELECT scatname from inms_by_scat WHERE scatname= "+"'"+str(y)+"' limit 20 ")
     # select fiemld
-    return render_template('sel_inm.html',y=y,form1=form1,form2=form2,form3=form3)#,inms=inms)
+    return render_template('sel_inm_option.html',y=y,form1=form1,form2=form2,form3=form3)#,inms=inms)#'sel_inm_option.html
 
 @app.route("/selection/inm/alpha" , methods=['get','post'])
 def sel_alfa():   # requetes alphabetiques
@@ -165,4 +165,4 @@ def PageError():
 def PageTravaux():
     error = "Page en travaux"
     im = url_for('static',filename='img/tr.jpg')
-    return render_template('travaux.html',error=error,im=im)
+    return render_template('test_widget.html',error=error,im=im)
