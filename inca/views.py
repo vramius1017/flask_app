@@ -16,7 +16,8 @@ session.set_keyspace("inca_test")
 
 inms = ""
 cancer = ""
-
+scat = ""
+ssbcat = ""
 
 
 @app.route("/")
